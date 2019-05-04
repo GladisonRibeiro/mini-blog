@@ -1,0 +1,11 @@
+<div class="article-list">
+  <div class="article" *ngFor="let article of articleList">
+    <h2 class="title">
+      {{ article.title }}
+    </h2>
+    <p class="description">
+      {{ article.description }}
+    </p>
+    <button class="button" (click)="onSelectedArticle(article)">more....</button>
+  </div>
+</div>

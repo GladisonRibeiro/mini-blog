@@ -1,0 +1,8 @@
+<div class="article-detail" *ngIf="article | async as at">
+  <h1 class="title">
+    {{ at.title }}
+  </h1>
+  <p class="content">
+    {{ at.content }}
+  </p>
+</div>
