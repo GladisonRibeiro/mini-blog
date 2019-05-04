@@ -1,0 +1,12 @@
+.admin-publish {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+input, textarea, button {
+    width: 400px;
+    margin: 15px auto 0px auto;
+    display: block;
+}

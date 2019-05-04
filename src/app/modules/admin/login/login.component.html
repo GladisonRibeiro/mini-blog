@@ -1,0 +1,7 @@
+<div class="admin-login">
+  <form class="form" #form="ngForm" (submit)="onSubmit(form)">
+    <input type="text" placeholder="username" name="username" ngModel required>
+    <input type="password" placeholder="password" name="password" ngModel required minlength="5">
+    <button type="submit">Login</button>
+  </form>
+</div>

@@ -1,9 +1,11 @@
 <header class="nav-bar">
-  <h1 class="logo">Mini-blog</h1>
+  <h1 class="logo"><a [routerLink]="[ '/' ]">Mini-blog</a></h1>
   <nav class="nav">
     <ul class="menu">
       <li class="item">Articles</li>
-      <li class="item">Admin</li>
+      <li class="item">
+        <a [routerLink]="[ '/admin', 'publish' ]">Publish</a>
+      </li>
     </ul>
   </nav>
 </header>

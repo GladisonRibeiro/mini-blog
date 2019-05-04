@@ -1,0 +1,9 @@
+<div class="admin-publish">
+  <h2>New Article</h2>
+  <form class="form" [formGroup]="form" (submit)="onSubmit()">
+    <input type="text" formControlName="title" >
+    <textarea cols="30" rows="5" formControlName="description"></textarea>
+    <textarea cols="30" rows="15" formControlName="content"></textarea>
+    <button type="submit">Save</button>
+  </form>
+</div>
