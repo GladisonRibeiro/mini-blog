@@ -17,6 +17,10 @@ export class PublishComponent implements OnInit {
     private articleService: ArticleService
   ) { }
 
+  get f() : any {
+    return this.form.controls;
+  }
+
   ngOnInit() {
 
     this.form = this.fb.group({
@@ -29,6 +33,9 @@ export class PublishComponent implements OnInit {
   }
 
   onSubmit() {
+
+    console.log(this.form);
+
     if (this.form.valid) {
       const data = this.form.value;
       this.articleService.update(data);
